@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="theme-color" content="#f7f7f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#202124" media="(prefers-color-scheme: dark)">
+<title>T-Rex Runner</title>
+<link rel="icon" href="__FAVICON__">
+<style>
+:root{--ink:#535353;--paper:#f7f7f7}
+@media (prefers-color-scheme:dark){:root{--ink:#acacac;--paper:#202124}}
+html,body{margin:0;height:100%;overflow:hidden;background:var(--paper);touch-action:manipulation;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent}
+body{display:flex;align-items:center;justify-content:center}
+.game{position:relative;flex:none;height:150px;transform-origin:center}
+.game-canvas{display:block;image-rendering:pixelated}
+.hint{position:fixed;left:0;right:0;bottom:12%;text-align:center;color:var(--ink);font:15px/1.8 monospace;padding:0 16px;pointer-events:none;transition:opacity .3s}
+.hint[hidden]{display:block;opacity:0}
+.hint span{display:inline-block}
+.hint span+span::before{content:"\00b7";margin:0 .6em}
+@media (max-width:640px){.hint span{display:block}.hint span+span{margin-top:.6em}.hint span+span::before{content:none}}
+kbd{display:inline-block;min-width:1.4em;padding:0 6px;border:1px solid var(--ink);border-radius:3px;text-align:center}
+@media (max-height:420px){.hint{bottom:8px}}
+</style>
+</head>
+<body>
+<div id="game" class="game"></div>
+<p id="hint" class="hint" aria-live="polite"></p>
+<script>/*__BUNDLE__*/</script>
+</body>
+</html>

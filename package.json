@@ -1,0 +1,15 @@
+{
+  "name": "moretti",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "bun test",
+    "typecheck": "tsc --noEmit",
+    "build": "bun run scripts/build.ts && bun run scripts/svg.ts",
+    "dev": "bun run scripts/dev.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.6.0"
+  }
+}

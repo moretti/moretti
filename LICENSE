@@ -1,8 +1,8 @@
-The T-Rex runner game in this repository (runner.js, the sprite sheet and the
-sounds embedded in index.html, dino.svg and dino-dark.svg) is derived from the
-Chromium project's offline page easter egg and is distributed under the
-Chromium BSD license below. Everything else in this repository is released under
-the same terms.
+The T-Rex runner in this repository (the game logic under src/, the sprite
+sheets and sounds under assets/, and the index.html, dino.svg and dino-dark.svg
+built from them) is derived from the Chromium project's offline page easter egg
+and is distributed under the Chromium BSD license below. Everything else in this
+repository is released under the same terms.
 
 ----------------------------------------------------------------------------
 
